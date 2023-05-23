@@ -69,7 +69,7 @@ Estilo do link ativo
 
 /**/
 .box-content {
-  width: 750px;
+  width: 2000px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -81,6 +81,7 @@ Estilo do link ativo
   font-size: 50px;
   font-family: "Berkshire Swash", cursive;
 }
+/**/
 
 /**/
 .box-content-paragrafo {
@@ -107,13 +108,36 @@ ul li {
   margin-top: 20px;
 }
 
+/*definições especiais para a página HOBBIES e CONTATO*/
+.box-content-titulo-center-contato {
+  font-size: 50px;
+  padding-top: 10px;
+  padding-left: 450px;
+  width: 750px;
+  font-family: "Berkshire Swash", cursive;
+}
+
+.box-content-titulo-center {
+  font-size: 50px;
+  padding-top: 125px;
+  padding-left: 450px;
+  width: 750px;
+  font-family: "Berkshire Swash", cursive;
+}
+
+.box-content-paragrafo-center {
+  padding-left: 185px;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
 /*alinhando as duas listas de hobbies lado a lado*/
 .hobbies-list1 {
   font-size: 22px;
   font-family: var(--second-font);
 }
 .hobbies-list2 {
-  padding-top: 153px;
+  padding-top: 10px;
   font-size: 22px;
   font-family: var(--second-font);
 }
@@ -125,6 +149,8 @@ ul li {
   gap: 15px;
   font-family: var(--main-font);
   font-size: 18px;
+  width: 750px;
+  padding-left: 180px;
 }
 
 #send {
