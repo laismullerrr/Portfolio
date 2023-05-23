@@ -21,7 +21,10 @@
 /*definindo cores e ajustes do corpo todo do site*/
 body {
   box-sizing: border-box;
-  background-color: black;
+  background-image: url('./images/background2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   color: var(--second-color);
 }
 
@@ -167,7 +170,7 @@ textarea {
   font-size: 18px;
 }
 .rodape {
-  padding: 18px;
+  padding: 20px;
   color: white;
   background-color: var(--third-color);
   text-align: center;
