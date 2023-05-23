@@ -1,3 +1,4 @@
+/*importação das fontes pelo google*/
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:wght@200;600&display=swap");
 
 /* definindo a paleta de cores e fontes do site */
@@ -6,7 +7,6 @@
   --main-color: #000000;
   --second-color: #f6f6f6;
   --third-color: #793da5;
-  /*--hover-color: #272727;*/
   /*FONTES*/
   --main-font: "Berkshire Swash", cursive;
   --second-font: "Poppins", sans-serif;
@@ -18,14 +18,23 @@
   padding: 0;
 }
 
-/*definindo cores e ajustes do corpo todo do site*/
+/*definindo cores e ajustes do corpo do site*/
 body {
   box-sizing: border-box;
-  background-image: url('./images/background2.png');
+  background-image: url("./images/background2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   color: var(--second-color);
+}
+
+/*centralizando header*/
+header {
+  padding: 1% 0% 0% 15%;
+}
+header > nav {
+  display: flex;
+  gap: 220px;
 }
 
 /* colocando cores da paleta nas fontes do menu*/
@@ -49,20 +58,6 @@ Estilo do link ativo
 .links-menu:active {
     color: #ff0000;
 }*/
-
-/*centralizando menu*/
-header {
-  padding: 1% 0% 0% 15%;
-}
-header > nav {
-  display: flex;
-  gap: 220px;
-}
-
-/*atribuindo cor diferente para destacar*/
-.destaque-titulo {
-  color: var(--third-color);
-}
 
 /*definindo as fontes, cores, tamanhos e espaçamentos base das páginas*/
 .box {
@@ -93,6 +88,14 @@ header > nav {
   font-family: "Poppins", sans-serif;
   font-weight: 200;
 }
+ul li {
+  padding-bottom: 10px;
+}
+
+/*atribuindo cor diferente para destacar textos*/
+.destaque-titulo {
+  color: var(--third-color);
+}
 
 /*ajustes de imagens e enquadramento*/
 #imagem-lais {
@@ -100,10 +103,9 @@ header > nav {
   margin-top: 10px;
 }
 #imagem-gatos {
-    width: 40%;
-    margin-top: 20px;
-  }
-
+  width: 40%;
+  margin-top: 20px;
+}
 
 /*alinhando as duas listas de hobbies lado a lado*/
 .hobbies-list1 {
@@ -111,19 +113,9 @@ header > nav {
   font-family: var(--second-font);
 }
 .hobbies-list2 {
-    padding-top: 153px;
-    font-size: 22px;
-    font-family: var(--second-font);
-  }
-
-
-ul li {
-  padding-bottom: 10px;
-}
-
-.download-button:hover {
-  transform: scale(1.05);
-  transition: 0.4s;
+  padding-top: 153px;
+  font-size: 22px;
+  font-family: var(--second-font);
 }
 
 /*Configurando style do formulário de contato*/
@@ -133,11 +125,6 @@ ul li {
   gap: 15px;
   font-family: var(--main-font);
   font-size: 18px;
-}
-
-input {
-  padding: 10px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #send {
@@ -151,17 +138,22 @@ input {
   color: white;
 }
 
-#send:hover{
+#send:hover {
   background-color: var(--second-color);
   color: var(--third-color);
   transform: scale(1.1);
   transition: 0.2s;
 }
 
+input {
+  padding: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
 textarea {
   resize: vertical;
   box-sizing: border-box;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 #mensagem {
@@ -169,6 +161,8 @@ textarea {
   padding: 10px;
   font-size: 18px;
 }
+
+/*configurações do footer*/
 .rodape {
   padding: 20px;
   color: white;
@@ -177,36 +171,4 @@ textarea {
   font-family: var(--second-font);
   font-size: 15px;
   font-weight: 400;
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    padding: 0 20px;
-  }
-
-  header {
-    padding: 2% 0% 0% 10%;
-  }
-
-  .menu {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-
-  .box-hobbies {
-    flex-direction: column;
-    align-items: center;
-    padding: 8% 5%;
-  }
-
-  .box-content {
-    width: 100%;
-    margin-right: 0;
-  }
-
-  #imagem-gatos {
-    width: 35%;
-    margin-top: 20px;
-  }
 }
