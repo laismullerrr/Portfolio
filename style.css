@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:wght@200;600&display=swap");
+
+/* definindo a paleta de cores e fontes do site */
+:root {
+  /*PALETA*/
+  --main-color: #000000;
+  --second-color: #f6f6f6;
+  --third-color: #793da5;
+  /*--hover-color: #272727;*/
+  /*FONTES*/
+  --main-font: "Berkshire Swash", cursive;
+  --second-font: "Poppins", sans-serif;
+}
+
+/*definindo espaçamento global do site*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*definindo cores e ajustes do corpo todo do site*/
+body {
+  box-sizing: border-box;
+  background-color: black;
+  color: var(--second-color);
+}
+
+/* colocando cores da paleta nas fontes do menu*/
+.links-menu {
+  font-family: var(--second-font);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--third-color);
+  text-decoration: none;
+}
+
+/* mudando a cor ao passar o mouse no menu*/
+.links-menu:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+  color: var(--second-color);
+}
+
+/* **********TESTE************
+Estilo do link ativo  
+.links-menu:active {
+    color: #ff0000;
+}*/
+
+/*centralizando menu*/
+header {
+  padding: 1% 0% 0% 15%;
+}
+header > nav {
+  display: flex;
+  gap: 220px;
+}
+
+/*atribuindo cor diferente para destacar*/
+.destaque-titulo {
+  color: var(--third-color);
+}
+
+/*definindo as fontes, cores, tamanhos e espaçamentos base das páginas*/
+.box {
+  padding: 8% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/**/
+.box-content {
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-right: 5%;
+}
+
+/**/
+.box-content-titulo {
+  font-size: 50px;
+  font-family: "Berkshire Swash", cursive;
+}
+
+/**/
+.box-content-paragrafo {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+
+/*ajustes de imagens e enquadramento*/
+#imagem-lais {
+  width: 35%;
+  margin-top: 10px;
+}
+#imagem-gatos {
+    width: 40%;
+    margin-top: 20px;
+  }
+
+
+/*alinhando as duas listas de hobbies lado a lado*/
+.hobbies-list1 {
+  font-size: 22px;
+  font-family: var(--second-font);
+}
+.hobbies-list2 {
+    padding-top: 153px;
+    font-size: 22px;
+    font-family: var(--second-font);
+  }
+
+
+ul li {
+  padding-bottom: 10px;
+}
+
+.download-button:hover {
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
+/*Configurando style do formulário de contato*/
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: var(--main-font);
+  font-size: 18px;
+}
+
+input {
+  padding: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#send {
+  padding: 8px;
+  margin-top: 15px;
+  font-family: var(--main-font);
+  font-size: 25px;
+  width: 300px;
+  background-color: var(--third-color);
+  border-radius: 5px;
+  color: white;
+}
+
+#send:hover{
+  background-color: var(--second-color);
+  color: var(--third-color);
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+textarea {
+  resize: vertical;
+  box-sizing: border-box;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#mensagem {
+  height: 80px;
+  padding: 10px;
+  font-size: 18px;
+}
+.rodape {
+  padding: 18px;
+  color: white;
+  background-color: var(--third-color);
+  text-align: center;
+  font-family: var(--second-font);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0 20px;
+  }
+
+  header {
+    padding: 2% 0% 0% 10%;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+  .box-hobbies {
+    flex-direction: column;
+    align-items: center;
+    padding: 8% 5%;
+  }
+
+  .box-content {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  #imagem-gatos {
+    width: 35%;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Portfólio - Contato</title>
+</head>
+
+<body>
+<!--Menu com 3 seções linkadas no topo do site-->
+    <header>
+        <nav class="menu">
+            <a class="links-menu" href="index.html">Home</a>
+            <a class="links-menu" href="sobre.html">Sobre Mim</a>
+            <a class="links-menu" href="hobbies.html">Hobbies</a>
+            <a class="links-menu" href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <!--texto explicativo dividido em título e parágrafos-->
+    <main class="box">
+
+        <section class="box-content">
+            <h1 class="box-content-titulo">Contato</h1>
+            <p class="box-content-paragrafo">Se quiser entrar em contato comigo, mande uma mensagem!
+            </p>
+
+            <!-- Formulário de contato-->
+            <form class="form" action="enviar-mensagem.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                <div class="buttons">
+                    <button id="send" type="send">Enviar</button>
+                    <!--<button id="cancel" type="button" class="cancelar">Cancelar</button>-->
+                </div>
+            </form>
+        </section>
+        
+        
+        <!--<img id="imagem-contato" src="images/contact.png" alt="imagem de lucas rolando">-->
+
+    </main>
+
+    <!--rodapé da página com créditos-->
+    <footer class="rodape">
+        <p> Portfólio - Projeto © 2023 - Laís Müller Aliski</p>
+    </footer>
+
+</body>
+
+</html>
